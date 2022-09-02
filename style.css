@@ -1,0 +1,179 @@
+/*--Reset---*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+/*--- common---*/
+body{
+    background-image:url(https://th.bing.com/th/id/R.fccd89ffec9f7dad6ef5d9f078b16951?rik=wHs%2fJa7MA%2fgnug&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f11%2fEducation-Wallpapers-HD-Free-Download.jpg&ehk=pryjBg0etZ20WbbTjeXuJMJYDIGu3XwAFziFMaIe%2fPA%3d&risl=&pid=ImgRaw&r=0) ;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+
+}
+button{
+    cursor: pointer;
+    border: none;
+    padding: 5px 8px;
+    font-size: 0.8rem;
+    transition: all 0.3s ease-in;
+}
+button:hover{
+    background-color: aliceblue  !important;
+    color: black !important;
+}
+input,textarea,table{
+    font-size: 1rem;
+
+}
+::placeholder{
+    font-size: 0.9rem;
+}
+/*--header--*/
+header{
+    background-color: aqua;
+    max-width: 650;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    
+}
+header .logo{
+    background-color:maroon;
+    color: white;
+    padding: 5px;
+    
+}
+header .search input{
+    width: 250px;
+    height: 30px;
+    padding: 16px 10px;
+}
+.container{
+    background-color: transparent;
+    max-width: 650px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start ;
+    padding: 20px;
+    border: 5px palevioletred solid;
+}
+/*--input form--*/
+.container .inp-frm{
+    background-color: wheat;
+    width: 40%;
+    padding: 10px;
+    margin-right: 10px;
+}
+.container .inp-frm form{
+    margin: auto;
+    background-color: pink;
+    padding: 15px;
+}
+.container .inp-frm form h3{
+    margin-bottom: 5px;
+    color: black;
+}
+.container  .inp-frm input{
+    width: 100%;
+    padding: 15px 10px;
+    height: 20px;
+    margin-bottom: 10px;
+}
+.container .inp-frm textarea{
+    width: 100%;
+    padding: 7px 10px;
+    resize: none;
+}
+.container .inp-frm button{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.container .inp-frm #save{
+    background-color: darkolivegreen;
+    color: white;
+}
+.container .inp-frm #reset{
+    background-color: mediumslateblue;
+    color: white;
+}
+/*----table--*/
+.container .table{
+    background-color: antiquewhite;
+    width: 50%;
+    max-height: 250px;
+    padding: 10px;
+    margin-left: 10px;
+    overflow: auto;
+}
+.container .table table{
+    width: 100%;
+    background-color: beige;
+}
+.container .table .note-body{
+    display: none;
+}
+.container .table table, .container .table table td{
+    border: 2px white solid;
+    padding: 5px;
+}
+.container .table table th{
+    padding: 5px;
+    text-align: left;
+    background-color: bisque;
+}
+.container .table table th:last-child,
+.container .table table th:nth-last-child(2){
+    text-align: center;
+}
+
+.container .table table .btnv,
+.container .table table .btnv
+{
+text-align: center;
+}
+.container .table table td{
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.container .table table .btnv button{
+    background-color: green;
+    color: aliceblue;
+}
+.container .table table .btnd button{
+    background-color: brown;
+    color: aliceblue;
+}
+/*----responsive--*/
+@media(max-width:600px){
+    /* header*/
+    header{
+        flex-direction: column;
+    }
+    header .logo{
+        margin-bottom: 10px;
+    }
+    /* container*/
+
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .container .inp-frm,
+    .container .table{
+        margin-bottom: 10px;
+        min-width: 250px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
